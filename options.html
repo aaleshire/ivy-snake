@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chrome Snake</title>
+    <link rel="stylesheet" media="screen" href="style.css">
+    <link rel="icon" href="icon16.png" sizes="16x16" type="image/png">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body id="dark-theme">
+    <form id="options">
+        <span class="title">Hour Format</span>
+        <fieldset id="hour_format">
+            <input id="hour_format_12" type="radio" name="hour_format" value="12" /><label for="hour_format_12"> 12</label>
+            <br /><input id="hour_format_24" type="radio" name="hour_format" value="24" /><label for="hour_format_24"> 24</label>
+        </fieldset>
+        
+        <span class="title">Theme</span>
+        <fieldset id="theme">
+            <input id="theme_dark" type="radio" name="theme" value="dark" /><label for="theme_dark"> Dark</label>
+            <br /><input id="theme_light" type="radio" name="theme" value="light" /><label for="theme_light"> Light</label>
+        </fieldset>
+        
+        <span class="title">Initial Speed</span>
+        <fieldset id="initial_speed">
+            <input id="initial_speed_slow" type="radio" name="initial_speed" value="slow" /><label for="initial_speed_slow"> Slow</label>
+            <br /><input id="initial_speed_medium" type="radio" name="initial_speed" value="medium" /><label for="initial_speed_medium"> Medium</label>
+            <br /><input id="initial_speed_fast" type="radio" name="initial_speed" value="fast" /><label for="initial_speed_fast"> Fast</label>
+        </fieldset>
+        <a href="newtab.html">Back to game</a>
+    </form>
+</body>
+</html>

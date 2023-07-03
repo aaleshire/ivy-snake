@@ -1,0 +1,28 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "newtab.html"
+   },
+   "description": "Play snake at anytime just by opening a new tab",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "content_scripts": [
+      {
+          "matches": [
+              "*://*/*"
+          ],
+          "js": [
+              "content.js"
+          ],
+          "run_at": "document_end"
+      }
+  ],
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC83g0c9DQeuO6uZHgoxTXCtZxg2gZBuEYDGtTmKZHKt3DB6d6D5xQ272386GTEbDmhqEc3gjt1xW76m/MNHMAmdtuPrM11QoWTpCNmF5rYY6MXZ9dQ37okZ5bgWzIaDZ8UjDuwxcsc/TFxiDdfxzlEeJildxlfpo1J2mbGkYW9IwIDAQAB",
+   "manifest_version": 2,
+   "name": "Ivy Snake",
+   "options_page": "options.html",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.1"
+}

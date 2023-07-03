@@ -1,0 +1,69 @@
+html,body {padding:0;margin:0;overflow:hidden;}
+body {height:100%;font-family:'HelveticaNeue-UltraLight','Helvetica Neue UltraLight','Helvetica Neue','Open-Light',sans-serif;font-weight:100;}
+a {color:#fff;text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+#time,#start {position:absolute;text-align: center;width:100%;height:100%;}
+#time span,#start span {position:relative;opacity:0;}
+#time span {font-size: 11em;top:-160px;-webkit-transition-property:top,opacity;-webkit-transition-duration:.7s,.7s;}
+#start span {font-size: 4em;cursor:pointer;padding:10px;top:180px;-webkit-transition-property:top,opacity;-webkit-transition-duration:.4s,.4s;-webkit-transition-delay: .4s,.4s;}
+#time.animate span{top:-50px;opacity:1;}
+#start.animate span {top:90px;opacity:1;}
+#time.hide span{top:-50px;opacity:.05;-webkit-transition-delay: 0s,0s;}
+#start.hide span{opacity:0;-webkit-transition-delay: 0s,.4s;cursor:default;}
+#options-link {display:block;position:absolute;bottom:40px;right:30px;}
+#default-new-tab {display:block;position:absolute;bottom:20px;right:30px;}
+
+#snake div {position:absolute;}
+#feed div {position:absolute;}
+
+#options {position:fixed;top:50%;left:50%;width:140px;height:400px;margin:-200px 0 0 -70px;line-height:1.6em;}
+#options .title {font-size: 1.4em;}
+#options input[type=radio] {}
+#options fieldset {margin:0 0 30px 0;padding:10px 0 0 10px;border:none;}
+
+/* dark theme */
+body#dark-theme::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/ivy.png');
+    background-size: cover;
+    opacity: 0.5; /* Adjust the value as needed to achieve desired transparency */
+    z-index: -1;
+}
+
+#dark-theme #snake div {
+    background-color: #FFF;
+    background-size: cover;
+}
+#dark-theme #feed div {
+    background-color: #FFF;
+    background-size: cover;
+}
+
+/* light theme */
+body#light-theme::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/ivy.png');
+    background-size: cover;
+    opacity: 0.5; /* Adjust the value as needed to achieve desired transparency */
+    z-index: -1;
+}
+
+#light-theme #snake div {
+    background-color: #FFF;
+    background-size: cover;
+}
+#light-theme #feed div {
+    background-color: #FFF;
+    background-size: cover;
+}
